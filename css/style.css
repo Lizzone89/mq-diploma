@@ -108,20 +108,22 @@ body {
 .trends-container {
 display: flex;
 box-sizing: border-box;
-min
 }
 
 .trend-box {
  background-color: #000000;
  position: relative;
  overflow: hidden;
-
+ flex-basis: 49%;
+ margin: 0.25%;
+ max-height:  320px;
+ align-self: stretch;
 }
 
 .trend-img {
-  width: 100%;
-  opacity: 0.6;
-  max-height: 320px;
+ width: 100%;
+ opacity: 0.6;
+ max-height:  320px;
 }
 
 .trend-box-container {
@@ -129,9 +131,10 @@ min
   border: 2px solid #b59f5b;
   bottom: 14px;
   width: 90%;
-  padding: 22px 18px;
+  padding: 20px 16px;
   margin-left: 5%;
   margin-right: 5%;
+  max-height:  90%;
 }
 
 .trend-title {
@@ -166,7 +169,6 @@ min
 .tag-list-item {
   margin-right: 20px;
 }
-
 
 /*MAIN*/
 
@@ -442,6 +444,7 @@ min
   display: flex;
   flex-wrap: wrap;
   margin-top: 28px;
+
 }
 
 .product-card {
@@ -454,11 +457,11 @@ min
 }
 
 .product-picture {
-  width:  100%;
+  max-width:  290px;
 }
 
 .product-picture-img {
-  width: 100%;
+  max-width:  290px;
 }
 
 .product-title {
@@ -783,7 +786,6 @@ min
 
 .trend-box {
   width: 24.8%;
-  max-height: 320px;
   margin: 0.1%;
 }
 
@@ -888,6 +890,10 @@ min
 
 .product-card {
   max-width: 30%;
+}
+
+.product-box {
+  width: 320px;
 }
 
 .product-title {
@@ -1076,28 +1082,29 @@ min
 }
 
 .shop-container {
-  width:  100%;
-  justify-content: space-between;
+  max-width: 700px;
+  justify-content: start;
+  align-items: stretch;
 }
 
 .product-container {
-  width: 100%;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .product-card {
-  max-width: 46%;
+  width: 40%;
   margin-bottom: 55px;
 }
+
 
 .product-title {
   font-size: 17px;
 }
 
 .product-box {
-  max-width: 290px;
+  width: 320px;
   min-height: 260px;
 }
 

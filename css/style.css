@@ -114,16 +114,16 @@ box-sizing: border-box;
  background-color: #000000;
  position: relative;
  overflow: hidden;
- flex-basis: 49%;
- margin: 0.25%;
- max-height:  320px;
+ flex-basis: 49.5%;
+ margin: 0.22%;
  align-self: stretch;
+ flex-grow: 1;
+ max-height: 320px;
 }
 
 .trend-img {
  width: 100%;
  opacity: 0.6;
- max-height:  320px;
 }
 
 .trend-box-container {
@@ -174,6 +174,8 @@ box-sizing: border-box;
 
 .main {
   .display:  flex;
+  justify-content: space-between;
+  flex-grow: 1;
   }
 
 .news:not(:last-child):after {
@@ -444,7 +446,6 @@ box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   margin-top: 28px;
-
 }
 
 .product-card {
@@ -484,6 +485,7 @@ box-sizing: border-box;
   outline: 3px solid #b59f5b;
   outline-offset: 18px;
   height: 80%;
+  width:  100%;
 }
 
 .price {
@@ -768,7 +770,7 @@ box-sizing: border-box;
 }
 
 .title {
-  font-size: 45px
+  font-size: 45px;
 }
 
 .headline-trends {
@@ -996,29 +998,33 @@ box-sizing: border-box;
 }
 
 .trends-container {
+  width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 18px;
+  padding-top: 18px;
+  justify-content: space-between;
 }
 
 .trend-box {
-  margin: 0.1%;
   overflow: hidden;
+  min-width: 320px;
+
+}
+
+.trend-box:nth-child(odd) {
+  margin-right: 2px;
 }
 
 .trend-title {
   font-size: 17px;
 }
 
-.page {
-  margin-left: 35px;
-  margin-right: 35px;
-}
 
 .page-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: stretch;
 }
 
 .news {
@@ -1026,11 +1032,13 @@ box-sizing: border-box;
 }
 
 .main {
-  width: calc(100% - 270px);
+  width: 56%;
+  margin-left: 35px;
 }
 
 .aside-container {
-  width: 270px;
+  max-width: 270px;
+  margin-right: 35px;
   margin-left: 35px;
 }
 
@@ -1082,7 +1090,7 @@ box-sizing: border-box;
 }
 
 .shop-container {
-  max-width: 700px;
+  width: 700px;
   justify-content: start;
   align-items: stretch;
 }
@@ -1094,7 +1102,7 @@ box-sizing: border-box;
 }
 
 .product-card {
-  width: 40%;
+  width: 47%;
   margin-bottom: 55px;
 }
 
@@ -1104,7 +1112,7 @@ box-sizing: border-box;
 }
 
 .product-box {
-  width: 320px;
+  width: 280px;
   min-height: 260px;
 }
 
@@ -1113,7 +1121,7 @@ box-sizing: border-box;
 }
 
 .footer-container {
-  width:  100%;
+  width:  700px;
   margin-bottom: 40px;
 }
 
@@ -1131,7 +1139,7 @@ box-sizing: border-box;
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
 
   .trend-box {
-    width: 49.5%;
+    width: 50%;
   }
 
 }
@@ -1139,7 +1147,7 @@ box-sizing: border-box;
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
 
 .trend-box {
-    width: 24.8%;
+    width: 25%;
   }
 }
 
